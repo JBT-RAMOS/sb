@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>数码小学生の奇妙档案</title>
-    <style>
-        body {
-            font-family: "Microsoft YaHei", sans-serif;
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 30px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 25px;
-            margin: 20px 0;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        .highlight {
-            color: #ffcc00;
-            font-weight: bold;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin: 12px 0;
-            line-height: 1.5;
-        }
-        .emoji {
-            font-size: 1.2em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>数码小学生の奇妙档案</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1> 数码小学生の奇妙档案</h1>
-    
+  <div class="container">
+    <h1> 数码小学生の数字遗迹</h1>
+
+    <!-- 基础信息 -->
     <div class="card">
-        <h2> 基础信息</h2>
-        <p>B站名称：<span class="highlight">爱数码的小学生</span></p>
-        <p>UID：<span class="highlight">3546799518255482</span></p>
-        <p>QQ暗号（猜猜哪个是真的？）<br>
-        <span class="highlight">27335141</span> | 
-        <span class="highlight">3653248805</span> | 
-        <span class="highlight">1137743390</span></p>
+      <h2> 身份标识</h2>
+      <p>B站名称：<span class="highlight">爱数码的小学生</span></p>
+      <p>UID：<span class="highlight">3546799518255482</span></p>
+      <p>QQ暗号（猜中无奖）：<br>
+        <code>27335141</code> | <code>3653248805</code> | <code>1137743390</code>
+      </p>
     </div>
 
+    <!-- 英雄事迹 -->
     <div class="card">
-        <h2> 英雄事迹</h2>
-        <p>• 拥有全网最古老的QQ空间（据说能追溯到石器时代）</p>
-        <p>• 空间相册里珍藏<em>神秘家族艺术照</em>（嘘...）</p>
+      <h2> 传奇事迹</h2>
+      <ul>
+        <li>拥有可追溯至“史前文明”的QQ空间</li>
+        <li>相册中藏有<em>家族神秘艺术照</em>（非公开资料）</li>
+      </ul>
     </div>
 
+    <!-- 神人行为 -->
     <div class="card">
-        <h2>🤪 神人行为大赏</h2>
-        <ul>
-            <li>🧠 记忆力≈金鱼（7秒定律实锤）</li>
-            <li> 对自己的<i>i7</i>有谜之自信（虽然核显有点害羞）</li>
-            <li> 小学成绩单当传家宝</li>
-            <li> 问题复读机（问完就忘，忘了再问）</li>
-            <li> 阴阳师十级学者</li>
-            <li> 存在感探测器（灵敏度：0/100）</li>
-            <li> 友谊小船说翻就翻（然后怪风太大）</li>
-        </ul>
-        <p style="text-align: center; margin-top: 20px;">
-            <span class="emoji"> 温馨提示：</span> 以上内容纯属好友间欢乐互怼，请勿当真！
-        </p>
+      <h2> 行为图鉴</h2>
+      <ul>
+        <li>🧠 金鱼记忆（7秒刷新机制）</li>
+        <li> 对“残血i7”有信仰级自信</li>
+        <li> 问题复读机 · 阴阳大师 · 存在感幻觉症</li>
+        <li> 擅长“怪天怪地怪队友”三连</li>
+      </ul>
+      <p class="note">* 注：本档案仅供娱乐，友谊第一 </p>
     </div>
 
-    <div style="text-align: center; margin-top: 30px; opacity: 0.8;">
-        Made with  and too much free time
+    <!-- 聊天截图区 -->
+    <div class="card">
+      <h2> 聊天实录（节选）</h2>
+      <div class="gallery">
+        <!-- 图片会由 JS 自动加载 -->
+      </div>
     </div>
+  </div>
+
+  <!-- 音乐控制 -->
+  <div id="music-toggle" title="点击开关背景音乐"></div>
+
+  <!-- 隐藏音频元素 -->
+  <audio id="bg-music" loop>
+    <source src="See%20You%20Again.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
