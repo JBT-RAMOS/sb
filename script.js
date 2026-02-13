@@ -2,7 +2,9 @@
 const imageFiles = [
   'chat1.jpg',
   'chat2.jpg',
-  'chat3.jpg'
+  'chat3.jpg',
+  'chat4.jpg',
+  'chat5.jpg'
   // 添加更多...
 ];
 
@@ -44,3 +46,4 @@ toggleBtn.addEventListener('click', (e) => {
     isPlaying = true;
   }
 });
+
